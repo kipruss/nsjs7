@@ -9,22 +9,28 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .small {
+            font-size: 0.8em;
+        }
+        .smallest {
+            font-size: 0.5em;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Tehnički intervju — pogled iz oba ugla</h1>
+        <p>Konstantin Bajev (Константин Баев), Svitla Systems</p>
     </header>
-
+    
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+        <h2>Tehnički intervju — pogled iz oba ugla</h2>
+        <p>Konstantin Bajev, Svitla Systems</p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="pictures/cover.jpg" alt="">
             <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
+                © Konstantin Bajev
             </figcaption>
         </figure>
         <style>
@@ -32,11 +38,11 @@
                 margin: 30px 0 0;
                 color: white;
                 text-align: center;
-                font-size: 70px;
+                font-size: 60px;
             }
 
             #cover p {
-                margin: 10px 0 0;
+                margin: 340px 0 0;
                 text-align: center;
                 color: white;
                 font-style: italic;
@@ -50,155 +56,385 @@
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2 class="shout shrink">Šta je tehnički intervju?</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/interview.jpg" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Šta je cilj intervjua?</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/posao.jpg" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="cover">
+        <figure>
+            <img class="cover" src="pictures/code.jpg" alt="">
+            <figcaption class="copyright right white">
+                <a href="https://www.instagram.com/programm.r/">© Robyn Silber</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Ko može da drži intervju?</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li class="next">Vaš potencialni šef ili team lead</li>
+            <li class="next">Vaš potencialni kolega</li>
+            <li class="next">Neki programer sa iskustvom, ali sa drugog projekta</li>
+            <li class="next">Specijalista za intervju</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
     <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Moguće varijante</h2>
+        <ol>
+            <li class="next">Jedan ili nekoliko intervjua</li>
+            <li class="next">Jedan ili nekoliko intervjuera</li>
+            <li class="next">Lično ili onlajn</li>
+            <li class="next">Na svom jeziku ili na stranom</li>
+            <li class="next">Različite vrste intervjua (o tom potom)</li>
+            <li class="next">...</li>
+        </ol>
     </section>
 
     <section class="slide">
-        <h2>Two columns if you like</h2>
+        <h2>Šta ne sme da radi kandidat</h2>
+        <ol>
+            <li class="next">Kasniti</li>
+            <li class="next">Lagati</li>
+            <li class="next">Ponašati se nekulturno</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Šta ne sme da radi intervjuer</h2>
+        <ol>
+            <li class="next">Kasniti</li>
+            <li class="next">Praviti budalu od kandidata</li>
+            <li class="next">Ponašati se nekulturno</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Pitanja i zadaci</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Šta je vrlo važno znati (Vanilla JS)</h2>
         <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <ul>
+                <li>Variable types</li>
+                <li>Scope</li>
+                <li>Immutability</li>
+                <li>«this» Context</li>
+                <li>Prototype inheritance</li>
+                <li>Promices</li>
+            </ul>
+            <ul>
+                <li>Function closures</li>
+                <li>Events (bubbling and capturing)</li>
+                <li>Manipulating DOM Elements</li>
+                <li>ES2015 (ES6), ...</li>
+                <li>Git</li>
+                <li>Build tools</li>
+            </ul>
         </div>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
+        <h2>Šta će biti u konsoli?</h2>
         <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
+            <code>var foo = [1, 2];</code>
+            <code>var bar = foo;</code>
+            <code>bar[0] = 42;</code>
+            <code>console.log(<mark>foo</mark>);</code>
         </pre>
     </section>
 
     <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
+        <h2>Šta će biti u konsoli?</h2>
+        <pre>
+            <code>var foo = [1, 2];</code>
+            <code>var bar = foo;</code>
+            <code>bar[0] = 42;</code>
+            <code>console.log(<mark>foo</mark>); <span class="comment">// [42, 2]</span></code>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+        <h2>Šta će biti u konsoli?</h2>
+        <pre>
+            <code>var foo = [1, 2];</code>
+            <code>var bar = foo;</code>
+            <code>bar = [42, 43];</code>
+            <code>console.log(<mark>foo[0]</mark>);</code>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2>Inner navigation</h2>
+        <h2>Šta će biti u konsoli?</h2>
+        <pre>
+            <code>var foo = [1, 2];</code>
+            <code>var bar = foo;</code>
+            <code>bar = [42, 43];</code>
+            <code>console.log(<mark>foo[0]</mark>); <span class="comment">// 1</span></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će vratiti funkcija?</h2>
+        <pre>
+            <code>(function() {</code>
+            <code>    return [2, 2, 2, 2].map(parseInt);</code>
+            <code>})()</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će vratiti metod?</h2>
+        <pre>
+            <code>[2, 2, 2, 2].map(parseInt);</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će vratiti metod?</h2>
+        <pre>
+            <code>[2, 2, 2, 2].map(parseInt); <mark>// [2, NaN, NaN, 2]</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Zašto?</h2>
+        <pre>
+            <code>[2, 2, 2, 2].map((el, <mark>index</mark>) => {</code>
+            <code>    return parseInt(el, <mark class="important">index</mark>); <mark>// [2, NaN, NaN, 2]</mark></code>
+            <code>});</code>
+            <code><span class="comment">// parseInt(string, radix)</span></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će biti u konsoli?</h2>
+        <pre class="small">
+            <code>var f = function() {</code>
+            <code>    this.x = 5;</code>
+            <code>    (function() {</code>
+            <code>        this.x = 3;</code>
+            <code>    })();</code>
+            <code>    console.log(this.x);</code>
+            <code>};</code>
+            <code><mark>f();</mark></code>
+            <code><mark>new f();</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će biti u konsoli?</h2>
+        <pre class="small">
+            <code>var f = function() {</code>
+            <code>    this.x = 5;</code>
+            <code>    (function() {</code>
+            <code>        this.x = 3;</code>
+            <code>    })();</code>
+            <code>    console.log(this.x);</code>
+            <code>};</code>
+            <code><mark>f();</mark> <span class="comment">// 3</span></code>
+            <code><mark>new f();</mark> <span class="comment">// 5</span></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Fix this code to print 1 2 3 4 5<br>(interval 1 sec)</h2>
+        <pre>
+            <code>for (var i = 1; i <= 5; i++) {</code>
+            <code>    setTimeout(function() {</code>
+            <code>        console.log(i);</code>
+            <code>    }, 1000 * i);</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Rešenje uz ES2016</h2>
+        <pre>
+            <code>for (<mark>let</mark> i = 1; i <= 5; i++) {</code>
+            <code>    setTimeout(function() {</code>
+            <code>        console.log(i);</code>
+            <code>    }, 1000 * i);</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Rešenje</h2>
+        <pre class="small">
+            <code>for (var i = 1; i <= 5; i++) {</code>
+            <code>    setTimeout(function(x) {</code>
+            <code>        return function() {</code>
+            <code>            console.log(x);</code>
+            <code>        };</code>
+            <code>    }(i), 1000 * i);</code>
+            <code>}</code>
+        </pre>
+        <p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What the heck is the event loop anyway? | Philip Roberts | JSConf EU</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Još jedno rešenje</h2>
+        <pre class="small">
+            <code>for (var i = 1; i <= 5; i++) {</code>
+            <code>    (function(x) {</code>
+            <code>        setTimeout(function() {</code>
+            <code>            console.log(x);</code>
+            <code>        }, 1000 * x);</code>
+            <code>    })(i);</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Rešenje uz bind</h2>
+        <pre>
+            <code>for (var i = 1; i <= 5; i++) {</code>
+            <code>    setTimeout((function(x) {</code>
+            <code>        console.log(x);</code>
+            <code>    }).bind(null, i), i * 1000);</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će biti u konsoli?</h2>
+        <pre class="smallest">
+            <code>const x = 'a';</code>
+            <code>let printRes = 0;</code>
+            <code>switch(x) {</code>
+            <code>    case 'a':</code>
+            <code>        const res = 1;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>    case 'b':</code>
+            <code>        const res = 2;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>}</code>
+            <code>console.log(printRes);</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će biti u konsoli?</h2>
+        <pre class="smallest">
+            <code>const x = 'a';</code>
+            <code>let printRes = 0;</code>
+            <code>switch(x) {</code>
+            <code>    case 'a':</code>
+            <code>        const res = 1;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>    case 'b':</code>
+            <code>        const res = 2;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>}</code>
+            <code>console.log(printRes); <mark class="important">// Uncaught SyntaxError: Identifier 'res' has already been declared</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Šta će biti u konsoli?</h2>
+        <pre class="smallest">
+            <code>const x = 'a';</code>
+            <code>let printRes = 0;</code>
+            <code>switch(x) {</code>
+            <code>    case 'a': <mark>{</mark></code>
+            <code>        const res = 1;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>    <mark>}</mark></code>
+            <code>    case 'b': <mark>{</mark></code>
+            <code>        const res = 2;</code>
+            <code>        printRes = res;</code>
+            <code>        break;</code>
+            <code>    <mark>}</mark></code>
+            <code>}</code>
+            <code>console.log(printRes); <span class="comment">// 1</span></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Popraviti kod</h2>
+        <pre class="smallest">
+            <code>function Person (name) {</code>
+            <code>    if (name) {</code>
+            <code>        this.options.name = name;</code>
+            <code>    }</code>
+            <code>};</code>
+            <code>Person.prototype.options = {</code>
+            <code>    name: 'Default name'</code>
+            <code>};</code>
+            <code>var foo = new Person('foo');</code>
+            <code>var bar = new Person('bar');</code>
+            <code>console.log(foo.options.name); <mark class="important">// bar</mark></code>
+            <code>console.log(bar.options.name); <mark class="important">// bar</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Rešenje</h2>
+        <pre class="smallest">
+            <code>function Person (name) {</code>
+            <code>    if (name) {</code>
+            <code>        <mark>this.options = { name }</mark>;</code>
+            <code>    }</code>
+            <code>};</code>
+            <code>Person.prototype.options = {</code>
+            <code>    name: 'Default name'</code>
+            <code>};</code>
+            <code>var foo = new Person('foo');</code>
+            <code>var bar = new Person('bar');</code>
+            <code>console.log(foo.options.name); <span class="comment">// foo</span></code>
+            <code>console.log(bar.options.name); <span class="comment">// bar</span></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Koje vrste intervjua su fer?</h2>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li class="next">Probni zadatak</li>
+            <li class="next">Uzorci koda</li>
+            <li class="next">OpenSource projekti</li>
+            <li class="next">Algoritme</li>
+            <li class="next">Psihološki test</li>
+            <li class="next">Live coding</li>
+            <li class="next">Kodiranje na tabli (u Google docs)</li>
+            <li class="next">Logičke zadaci</li>
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
+	<section class="slide">
+		<h2>Linkovi</h2>
+		<ul>
+			<li>Predavanje <a href="https://www.youtube.com/watch?v=ncaWoyLINoI">Как пройти собеседование по JS? И зачем?</a>, Юрий Федоренко</li>
+            <li>Youtube kanal <a href="https://www.youtube.com/user/HillelITSchool/">Компьютерная школа Hillel</a></li>
+            <li>Telegram kanal <a href="https://t.me/callforward">«Мы вам перезвоним»</a> — zadaci po JS iz intervjua</li>
+            <li><a href="https://javascript.info/">javascript.info</a> — The Modern JavaScript Tutorial</li>
+            <li><a href="https://kipruss.github.io/nsjs7/">kipruss.github.io/nsjs7</a> — ova prezentacija</li>
+		</ul>
+	</section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/shower/shower">Powered by Shower</a>
     </footer>
 
     <div class="progress"></div>
